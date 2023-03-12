@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p13</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+        }
+        h2{
+            position: fixed;
+            top: 30%;
+            left: 45%;
+            transform: rotate(-90deg);
+            border-bottom: solid black 1em;
+        }
+        ul{
+            position: fixed;
+            left:20%;
+            top: 20%;
+            transform: rotate(-45deg);
+        }
+        .año{
+            position: fixed;
+            z-index: -5;
+            top: 0;
+            left: 0;
+            animation-name: movaño;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .escuela{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        @keyframes movaño {
+            0% {
+                top: 0;
+                left: 0;
+                transform: rotate(0);
+            }
+            20% {
+                top:100%;
+                left:15%;
+                transform: rotate(45deg);
+            }
+            40% {
+                top:60%;
+                left:100%;
+                transform: rotate(90deg);
+            }
+            60% {
+                top:0;
+                left:60%;
+                transform: rotate(180deg);
+            }
+            80% {
+                top:50%;
+                left:50%;
+                transform: rotate(220deg);
+            }
+            100% {
+                top:0;
+                left:0;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Recursos interactivos</h1>
+    <h2>Carla Wydrzyñski</h2>
+    <ul>
+        <li><a href="">llocweb</a></li>
+        <li><a href="">llocweb</a></li>
+        <li><a href="">llocweb</a></li>
+        <li><a href="">freecodecamp</a></li>
+    </ul>
+    <h3 class="año">2022 - 23</h3>
+    <h3 class="escuela">EASD Alcoi</h3>
+</body>
+</html>
